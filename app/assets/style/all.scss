@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./helpers/utilities";
+
+@import './layout/layout';
+
+@import './pages/index';
+@import './pages/class';
+@import './pages/class-detail';
+@import './pages/checkout-apply';
+@import './pages/checkout-payment';
+@import './pages/checkout-thankPage';
