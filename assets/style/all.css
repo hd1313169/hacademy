@@ -19442,35 +19442,19 @@ h1, .h1 {
   background: #2D3250;
   border: 1px solid #FFFFFF;
   font-size: 16px;
+  font-weight: bold;
   text-align: center;
   color: #FFFFFF;
 }
 
 .hotLesson-btn:hover {
   background: #F9B17A;
-  border: 1px solid #F9B17A;
-  color: #2D3250;
+  color: #FFFFFF;
 }
 
-.lessonInfo-bg1, .lessonInfo-bg2, .lessonInfo-bg3, .lessonInfo-bg4 {
+.lessonInfo-bg {
   background-size: cover;
   background-position: center center;
-}
-
-.lessonInfo-bg1 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
-}
-
-.lessonInfo-bg2 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
-}
-
-.lessonInfo-bg3 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
-}
-
-.lessonInfo-bg4 {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
 }
 
 .lessonInfo-bg-mask {
@@ -19485,11 +19469,11 @@ h1, .h1 {
 }
 
 .lessonInfo-content p {
-  color: white;
+  color: #FFFFFF;
 }
 
 .lessonInfo-content .material-icons {
-  color: #62DB54;
+  color: #F9B17A;
 }
 
 .lessonInfo-content h3, .lessonInfo-content .h3 {
@@ -19500,10 +19484,10 @@ h1, .h1 {
   display: inline-block;
   position: absolute;
   content: "";
-  background-color: #fff;
+  background-color: #FFFFFF;
   width: 50px;
   height: 3px;
-  background-color: #62DB54;
+  background-color: #F9B17A;
   left: 50%;
   bottom: -16px;
   -webkit-transform: translate(-50%, -50%);
@@ -19512,6 +19496,9 @@ h1, .h1 {
 }
 
 @media (min-width: 992px) {
+  .lessonInfo-bg {
+    height: 672px;
+  }
   .lessonInfo-bg-mask {
     padding: 216px 48px;
   }
@@ -19519,16 +19506,16 @@ h1, .h1 {
     background-color: rgba(0, 0, 0, 0);
   }
   .lessonInfo-bg-mask:hover span {
-    color: #62DB54;
+    color: #F9B17A;
   }
   .lessonInfo-bg-mask:hover p {
-    color: #fff;
+    color: #FFFFFF;
   }
   .lessonInfo-bg-mask:hover h3, .lessonInfo-bg-mask:hover .h3 {
     position: relative;
   }
   .lessonInfo-bg-mask:hover h3:after, .lessonInfo-bg-mask:hover .h3:after {
-    background-color: #62DB54;
+    background-color: #F9B17A;
   }
   .lessonInfo-content {
     -moz-text-align-last: left;
@@ -19541,100 +19528,50 @@ h1, .h1 {
     display: inline-block;
     position: absolute;
     content: "";
-    background-color: #fff;
+    background-color: #FFFFFF;
     width: 50px;
     height: 3px;
-    background-color: #c1c1c1;
+    background-color: #FFFFFF;
     left: 25px;
     bottom: -16px;
   }
   .lessonInfo-content .material-icons,
   .lessonInfo-content p {
-    color: #C1C1C1;
+    color: #FFFFFF;
   }
 }
 
-.c-mb-24 {
-  margin-bottom: 24px;
-}
-
 @media (min-width: 992px) {
-  .squareRounded {
+  .hoverEffect {
     display: none;
     width: 32px;
     height: 32px;
   }
-  .squareRounded-topLeft {
-    border-top: 1px solid #62DB54;
-    border-left: 1px solid #62DB54;
+  .hoverEffect-topLeft {
+    border-top: 1px solid #F9B17A;
+    border-left: 1px solid #F9B17A;
     border-top-left-radius: 10px;
   }
-  .squareRounded-topRight {
-    border-top: 1px solid #62DB54;
-    border-right: 1px solid #62DB54;
+  .hoverEffect-topRight {
+    border-top: 1px solid #F9B17A;
+    border-right: 1px solid #F9B17A;
     border-top-right-radius: 10px;
   }
-  .squareRounded-bottomLeft {
-    border-bottom: 1px solid #62DB54;
-    border-left: 1px solid #62DB54;
+  .hoverEffect-bottomLeft {
+    border-bottom: 1px solid #F9B17A;
+    border-left: 1px solid #F9B17A;
     border-bottom-left-radius: 10px;
   }
-  .squareRounded-bottomRight {
-    border-bottom: 1px solid #62DB54;
-    border-right: 1px solid #62DB54;
+  .hoverEffect-bottomRight {
+    border-bottom: 1px solid #F9B17A;
+    border-right: 1px solid #F9B17A;
     border-bottom-right-radius: 10px;
   }
   .card {
     padding: 32px;
   }
-  .card:hover .squareRounded {
+  .card:hover .hoverEffect {
     display: block;
-  }
-}
-
-.joinUs {
-  padding: 40px;
-  text-align: center;
-  max-width: 996px;
-}
-
-.joinUs a {
-  color: white;
-  padding: 8px 32px;
-}
-
-.joinUs a:hover {
-  background-color: #62DB54;
-  color: #2d2d2d;
-}
-
-@media (min-width: 992px) {
-  .joinUs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -moz-text-align-last: left;
-         text-align-last: left;
-    padding: 48px;
-  }
-  .joinUs h3, .joinUs .h3 {
-    margin-bottom: 8px;
-  }
-  .joinUs p {
-    margin: 0;
-  }
-  .joinUs .material-icons {
-    margin-bottom: 0;
-    margin-right: 60px;
-  }
-  .joinUs .joinUs-content {
-    margin-right: 96px;
   }
 }
 
@@ -19757,50 +19694,48 @@ h1, .h1 {
   }
 }
 
-.swiper .swiper-button-next:after,
-.swiper .swiper-button-prev:after {
-  content: '';
+.joinUs {
+  padding: 40px;
+  text-align: center;
+  max-width: 996px;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  position: unset;
-  width: 24px;
-  height: 24px;
-  margin-top: 0;
-  color: #62DB54;
+.joinUs a {
+  color: #FFFFFF;
+  padding: 8px 32px;
 }
 
-.swiper .swiper-pagination {
-  position: unset;
-  width: auto;
+.joinUs a:hover {
+  background-color: #F9B17A;
 }
 
-.swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: #62DB54;
-  opacity: initial;
-}
-
-.swiper .swiper-pagination .swiper-pagination-bullet-active {
-  width: 16px;
-  border-radius: 100px;
-}
-
-.swiper-buttons {
-  bottom: 0;
-  left: 30%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 10;
-  position: absolute;
-}
-
-@media (max-width: 991px) {
-  .swiper-buttons {
-    position: initial;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+@media (min-width: 992px) {
+  .joinUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    padding: 48px;
+  }
+  .joinUs h3, .joinUs .h3 {
+    margin-bottom: 8px;
+  }
+  .joinUs p {
+    margin: 0;
+  }
+  .joinUs .material-icons {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  .joinUs .joinUs-content {
+    margin-right: 96px;
   }
 }
 
