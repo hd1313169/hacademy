@@ -65,8 +65,9 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: #161E31 !default;
-$secondary: #F9B17A !default;
+$primary: #181818 !default;
+$primary-light: #2D2D2D !default;
+$secondary: #6257F6 !default;
 $success: $green !default;
 $info: #84BABC !default;
 $warning: $yellow !default;
@@ -79,12 +80,13 @@ $black: #202020 !default;
 $navy-dark: #2D3250 !default;
 $navy: #424769 !default;
 $navy-light: #676F9D !default;
-
+$highlight: #F9B17A !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary": $primary,
+  "primary-light": $primary-light,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -98,7 +100,7 @@ $theme-colors: (
   "navy-dark": $navy-dark,
   "navy": $navy,
   "navy-light": $navy-light,
-
+  "highlight": $highlight,
   ) !default;
 // scss-docs-end theme-colors-map
 

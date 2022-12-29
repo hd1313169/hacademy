@@ -1,49 +1,21 @@
-// 橫幅廣告
-// 背景圖片
-.banner-bg {
-  background-image: url(../../images/bg_home.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  padding: 84px 0;
+// Hero 
+.banner {
+  padding: 48px;
+  border: 1px solid $light;
 
-  &-content {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    max-width: 650px;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-
-    &:before {
-      display: inline-block;
-      position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      background-color: #fff;
-      left: -5px;
-      top: -5px;
-    }
-
-    &:after {
-      display: inline-block;
-      position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      background-color: #fff;
-      right: -5px;
-      top: -5px;
-    }
+  &-bg {
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 84px 0;
   }
 }
 
 @media (min-width: 768px) {
   .banner-bg {
-    background-image: url(../../images/bg_home.png);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -51,24 +23,10 @@
     padding: 216px 0;
   }
 }
-
-// 有裝飾的框框
-.banner {
-  padding: 47px 80px;
-  border: 1px solid #fff;
-}
-
-.square {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-
-// 橫幅廣告END
+// Hero END
 
 // 服務介紹
 .intro {
-
   // 服務介紹標題
   &-title {
     text-align: center;
@@ -99,14 +57,14 @@
 
   // 服務介紹內容
   &-item {
-    background: $primary;
-    border: 1px solid $primary;
+    background: $primary-light;
+    border: 1px solid $primary-light;
     text-align: center;
     color: $light;
     padding: 48px 0;
 
     &:hover {
-      background-color: $navy-dark;
+      background-color: $primary;
       border: 1px solid $secondary;
       border-radius: 12px;
 
@@ -140,7 +98,7 @@
     font-size: 48px;
     font-weight: bold;
     color: $secondary;
-    background-color: $navy;
+    background-color: $primary;
     font-family: "Azeret Mono";
   }
 }
@@ -155,10 +113,11 @@
 
   a {
     display: block;
+    color: $light;
 
     &:hover {
-      background-color: $secondary;
-      color: $light;
+      background-color: $light;
+      color: $secondary !important;
     }
   }
 }
@@ -185,7 +144,7 @@
     display: block;
     width: 172px;
     margin: 0 auto;
-    background: $navy-dark;
+    background: $primary;
     border: 1px solid $light;
     font-size: 16px;
     font-weight: bold;
@@ -228,7 +187,7 @@
     }
 
     .material-icons {
-      color: $secondary;
+      color: $highlight;
     }
 
     h3 {
@@ -241,7 +200,7 @@
         background-color: $light;
         width: 50px;
         height: 3px;
-        background-color: $secondary;
+        background-color: $highlight;
         left: 50%;
         bottom: -16px;
         transform: translate(-50%, -50%);
@@ -263,7 +222,7 @@
       background-color: rgba(0, 0, 0, 0.5);
 
       span {
-        color: $secondary;
+        color: $highlight;
       }
 
       p {
@@ -274,7 +233,7 @@
         position: relative;
 
         &:after {
-          background-color: $secondary;
+          background-color: $highlight;
         }
       }
     }
@@ -458,6 +417,7 @@
     }
   }
 }
+
 // 學生評價END
 
 

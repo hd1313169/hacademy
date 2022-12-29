@@ -25,22 +25,6 @@ h2 {
   border-radius: 24px;
 }
 
-// 漸層字
-.gradient-text {
-  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
-  background-clip: text;
-  color: transparent;
-}
-
-// 漸層背景
-.gradient-bg {
-  background: linear-gradient(90deg, #09ACF5 0%, #62DB54 50%);
-
-  &:hover {
-    background: linear-gradient(270deg, #09ACF5 0%, #62DB54 50%);
-  }
-}
-
 // 大頭貼
 .avatar {
   width: 100px;
@@ -50,7 +34,7 @@ h2 {
   margin: 0 auto;
 
   &-border-secondary {
-    border: 3px solid #62DB54;
+    border: 3px solid $secondary;
   }
 }
 
@@ -89,4 +73,10 @@ h2 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
 }
