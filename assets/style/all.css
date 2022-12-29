@@ -19294,7 +19294,7 @@ h1, .h1 {
 }
 
 .banner-bg {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home_mobile.jpg?raw=true);
+  background-image: url(../../images/bg_home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -19333,7 +19333,7 @@ h1, .h1 {
 
 @media (min-width: 768px) {
   .banner-bg {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
+    background-image: url(../../images/bg_home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -19521,7 +19521,7 @@ h1, .h1 {
     padding: 216px 48px;
   }
   .lessonInfo-bg-mask:hover {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .lessonInfo-bg-mask:hover span {
     color: #F9B17A;
