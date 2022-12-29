@@ -144,6 +144,7 @@
     font-family: "Azeret Mono";
   }
 }
+
 // 數字標籤END
 
 // 輪播標籤
@@ -161,6 +162,7 @@
     }
   }
 }
+
 // 輪播標籤END
 
 
@@ -186,13 +188,13 @@
     background: $navy-dark;
     border: 1px solid $light;
     font-size: 16px;
+    font-weight: bold;
     text-align: center;
     color: $light;
 
-    &:hover{
+    &:hover {
       background: $secondary;
-      border: 1px solid $secondary;
-      color: $navy-dark;
+      color: $light;
     }
   }
 }
@@ -200,35 +202,16 @@
 // 熱門課程END
 
 
-// 課程資訊
-// 背景及遮罩
+// 課程特色
 .lessonInfo {
 
-  &-bg1,
-  &-bg2,
-  &-bg3,
-  &-bg4 {
-    // height: 615px;
+  // 背景
+  &-bg {
     background-size: cover;
     background-position: center center;
   }
 
-  &-bg1 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info01.jpg?raw=true);
-  }
-
-  &-bg2 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info02.jpg?raw=true);
-  }
-
-  &-bg3 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info03.jpg?raw=true);
-  }
-
-  &-bg4 {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/info04.jpg?raw=true);
-  }
-
+  // 遮罩
   &-bg-mask {
     width: 100%;
     height: 100%;
@@ -236,40 +219,42 @@
     padding: 40px 72px;
   }
 
-}
+  // 內容文字
+  &-content {
+    text-align: center;
 
-// 內容文字
-.lessonInfo-content {
-  text-align: center;
+    p {
+      color: $light;
+    }
 
-  p {
-    color: white;
-  }
+    .material-icons {
+      color: $secondary;
+    }
 
-  .material-icons {
-    color: #62DB54;
-  }
+    h3 {
+      position: relative;
 
-  h3 {
-    position: relative;
-
-    &:after {
-      display: inline-block;
-      position: absolute;
-      content: "";
-      background-color: #fff;
-      width: 50px;
-      height: 3px;
-      background-color: #62DB54;
-      left: 50%;
-      bottom: -16px;
-      transform: translate(-50%, -50%);
+      &:after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $light;
+        width: 50px;
+        height: 3px;
+        background-color: $secondary;
+        left: 50%;
+        bottom: -16px;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
 
 // RWD
 @media (min-width: 992px) {
+  .lessonInfo-bg {
+    height: 672px;
+  }
 
   .lessonInfo-bg-mask {
     padding: 216px 48px;
@@ -278,18 +263,18 @@
       background-color: rgba(0, 0, 0, 0);
 
       span {
-        color: #62DB54;
+        color: $secondary;
       }
 
       p {
-        color: #fff;
+        color: $light;
       }
 
       h3 {
         position: relative;
 
         &:after {
-          background-color: #62DB54;
+          background-color: $secondary;
         }
       }
     }
@@ -305,10 +290,10 @@
         display: inline-block;
         position: absolute;
         content: "";
-        background-color: #fff;
+        background-color: $light;
         width: 50px;
         height: 3px;
-        background-color: #c1c1c1;
+        background-color: $light;
         left: 25px;
         bottom: -16px;
       }
@@ -316,47 +301,44 @@
 
     .material-icons,
     p {
-      color: #C1C1C1;
+      color: $light;
     }
   }
 }
 
 // 課程資訊END
 
+
 // 文章分享
 // 行動版卡片間距
-.c-mb-24 {
-  margin-bottom: 24px;
-}
-
 @media (min-width: 992px) {
 
-  .squareRounded {
+  .hoverEffect {
     display: none;
     width: 32px;
     height: 32px;
 
     &-topLeft {
-      border-top: 1px solid #62DB54;
-      border-left: 1px solid #62DB54;
+      border-top: 1px solid $secondary;
+      border-left: 1px solid $secondary;
       border-top-left-radius: 10px;
     }
 
     &-topRight {
-      border-top: 1px solid #62DB54;
-      border-right: 1px solid #62DB54;
+      border-top: 1px solid $secondary;
+      border-right: 1px solid $secondary;
       border-top-right-radius: 10px;
     }
 
     &-bottomLeft {
-      border-bottom: 1px solid #62DB54;
-      border-left: 1px solid #62DB54;
+      border-bottom: 1px solid $secondary;
+      border-left: 1px solid $secondary;
       border-bottom-left-radius: 10px;
     }
 
     &-bottomRight {
-      border-bottom: 1px solid #62DB54;
-      border-right: 1px solid #62DB54;
+      border-bottom: 1px solid $secondary;
+      border-right: 1px solid $secondary;
       border-bottom-right-radius: 10px;
     }
   }
@@ -365,7 +347,7 @@
     padding: 32px;
 
     &:hover {
-      .squareRounded {
+      .hoverEffect {
         display: block;
       }
     }
@@ -373,52 +355,6 @@
 }
 
 // 文章分享END
-
-// 加入我們
-.joinUs {
-  padding: 40px;
-  text-align: center;
-  max-width: 996px;
-
-  a {
-    color: white;
-    padding: 8px 32px;
-
-    &:hover {
-      background-color: #62DB54;
-      color: #2d2d2d;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .joinUs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align-last: left;
-    padding: 48px;
-
-    h3 {
-      margin-bottom: 8px;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .material-icons {
-      margin-bottom: 0;
-      margin-right: 60px;
-    }
-
-    .joinUs-content {
-      margin-right: 96px;
-    }
-  }
-}
-
-
 
 // 學生評價
 .feedback {
@@ -521,48 +457,49 @@
       margin-bottom: 32px;
     }
   }
+}
+// 學生評價END
 
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    content: '';
-  }
 
-  &-button-next,
-  &-button-prev {
-    position: unset;
-    width: 24px;
-    height: 24px;
-    margin-top: 0;
-    color: #62DB54;
-  }
+// 加入我們
+.joinUs {
+  padding: 40px;
+  text-align: center;
+  max-width: 996px;
 
-  .swiper-pagination {
-    position: unset;
-    width: auto;
+  a {
+    color: $light;
+    padding: 8px 32px;
 
-    .swiper-pagination-bullet {
-      background-color: #62DB54;
-      opacity: initial;
-
-      &-active {
-        width: 16px;
-        border-radius: 100px;
-      }
-    }
-  }
-
-  &-buttons {
-    bottom: 0;
-    left: 30%;
-    transform: translateX(-50%);
-    z-index: 10;
-    position: absolute;
-
-    @media (max-width: 991px) {
-      position: initial;
-      transform: none;
+    &:hover {
+      background-color: $secondary;
     }
   }
 }
 
-// 學生評價END
+@media (min-width: 992px) {
+  .joinUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: left;
+    padding: 48px;
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .material-icons {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+
+    .joinUs-content {
+      margin-right: 96px;
+    }
+  }
+}
