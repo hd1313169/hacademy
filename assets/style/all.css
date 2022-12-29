@@ -19464,12 +19464,12 @@ h2, .h2 {
 }
 
 h1, .h1 {
-  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo2.svg);
+  background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/hacademy_logo_dark.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 24px;
-  height: 24px;
+  width: 180px;
+  height: 128px;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
@@ -19477,9 +19477,9 @@ h1, .h1 {
 
 @media (min-width: 768px) {
   h1, .h1 {
-    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/hacademy_logo_dark.png);
     width: 180px;
-    height: 42px;
+    height: 128px;
   }
 }
 
@@ -19528,7 +19528,7 @@ h1, .h1 {
 }
 
 .banner-bg {
-  background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home_mobile.jpg);
+  background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -19538,7 +19538,7 @@ h1, .h1 {
 
 @media (min-width: 768px) {
   .banner-bg {
-    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.jpg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -19634,8 +19634,9 @@ h1, .h1 {
 }
 
 .lessonTag a:hover {
-  background-color: #FFFFFF;
-  color: #6257F6 !important;
+  background-color: #6257F6;
+  border: 1px solid #6257F6 !important;
+  color: #FFFFFF !important;
 }
 
 .hotLesson .card {
@@ -19646,6 +19647,14 @@ h1, .h1 {
 
 .hotLesson .card:hover {
   border: 2px solid #6257F6;
+  background-color: #6257F6 !important;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.hotLesson .card:hover a {
+  color: #F9B17A !important;
 }
 
 .hotLesson-btn {
@@ -19967,11 +19976,13 @@ h1, .h1 {
 
 .lessonType-item-active {
   background-color: #6257F6;
+  border: 1px solid #6257F6;
   color: #FFFFFF;
 }
 
 .lessonType-item:hover {
   background-color: #6257F6;
+  border: 1px solid #6257F6 !important;
   color: #FFFFFF;
 }
 
@@ -20001,7 +20012,7 @@ h1, .h1 {
 }
 
 .lessonList-btn-secondary:hover {
-  background-color: #424769;
+  background-color: #181818;
   color: #FFFFFF;
 }
 
@@ -20030,6 +20041,17 @@ h1, .h1 {
   .lessonList .lessonList-cta {
     width: 200px;
   }
+  .lessonList .lessonList-cta p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .lessonList .lessonList-btn {
     padding: 8px 48px;
   }
@@ -20052,7 +20074,12 @@ h1, .h1 {
 }
 
 .classDetail-price-btn:hover {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #6257F6 !important;
+  background-color: #FFFFFF;
+}
+
+.classDetail-price-btn:hover span {
+  color: #6257F6 !important;
 }
 
 .classDetail-price-item {
@@ -20173,7 +20200,7 @@ h1, .h1 {
   height: 20px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
-  background-color: #2D3250;
+  background-color: #181818;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20211,12 +20238,6 @@ h1, .h1 {
 }
 
 @media (min-width: 992px) {
-  .timeline-bg {
-    background-color: #2D3250;
-  }
-}
-
-@media (min-width: 992px) {
   .overlapCard {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -20239,13 +20260,13 @@ h1, .h1 {
   margin-bottom: 32px;
   border-style: solid;
   border-width: 12px 12px 0 12px;
-  border-color: #2D3250 transparent transparent transparent;
+  border-color: #2D2D2D transparent transparent transparent;
 }
 
 @media (min-width: 992px) {
   .trangle {
     border-width: 12px 0px 12px 12px;
-    border-color: transparent transparent transparent #2D3250;
+    border-color: transparent transparent transparent #2D2D2D;
     margin: 0;
     z-index: 1;
   }
@@ -20266,14 +20287,21 @@ h1, .h1 {
   width: calc(50% - 8px);
 }
 
+.apply-payment-item label {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.apply-payment-item label:hover {
+  background-color: #6257F6;
+  border: 1px solid #6257F6 !important;
+  color: #FFFFFF !important;
+}
+
 @media (min-width: 992px) {
   .apply-payment-item {
     width: auto;
   }
-}
-
-.apply-form-btn a {
-  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -20290,21 +20318,31 @@ h1, .h1 {
   .apply-form-item-100 {
     width: 100%;
   }
-  .apply-form-btn {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .apply-form-btn a {
-    width: 23.7%;
-  }
+}
+
+.apply-form-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6257F6;
+  border: 1px solid #6257F6;
+  border-radius: 8px;
+}
+
+.apply-form-btn:hover {
+  background-color: #FFFFFF !important;
+  border: 1px solid #FFFFFF !important;
+}
+
+.apply-form-btn:hover a, .apply-form-btn:hover span {
+  color: #6257F6 !important;
 }
 
 .payment-form-btn {
@@ -20332,6 +20370,21 @@ h1, .h1 {
   .complete {
     margin-bottom: 135px;
   }
+}
+
+.thankPage-btn {
+  position: relative;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+}
+
+.thankPage-btn:hover {
+  background-color: #6257F6 !important;
+  border: 1px solid #6257F6 !important;
+}
+
+.thankPage-btn:hover a {
+  color: #FFFFFF !important;
 }
 
 /*# sourceMappingURL=all.css.map */

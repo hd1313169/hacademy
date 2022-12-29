@@ -24,10 +24,10 @@ var lessonTagSwiper = new Swiper(".lessonTag-swiper", {
       slidesPerView: 10,
       spaceBetween: 16
     }
-  },
-  autoplay: {
-    delay: 2000
-  }
+  } // autoplay: {
+  //   delay: 2000,
+  // },
+
 });
 var lessonTypeSwiper = new Swiper(".lessonType-swiper", {
   // Default parameters
