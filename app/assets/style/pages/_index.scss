@@ -4,7 +4,7 @@
   border: 1px solid $light;
 
   &-bg {
-    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home_mobile.jpg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@
 
 @media (min-width: 768px) {
   .banner-bg {
-    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.jpg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/bg_home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -116,8 +116,9 @@
     color: $light;
 
     &:hover {
-      background-color: $light;
-      color: $secondary !important;
+      background-color: $secondary;
+      border: 1px solid $secondary !important;
+      color: $light !important;
     }
   }
 }
@@ -136,6 +137,11 @@
 
     &:hover {
       border: 2px solid $secondary;
+      background-color: $secondary !important;
+      transform: translateY(-20px);
+      a{
+        color: $highlight !important;
+      }
     }
   }
 

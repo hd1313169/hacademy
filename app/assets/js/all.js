@@ -24,11 +24,9 @@ var lessonTagSwiper = new Swiper(".lessonTag-swiper", {
         spaceBetween: 16
       }
     },
-  
-
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
 });
 
 var lessonTypeSwiper = new Swiper(".lessonType-swiper", {

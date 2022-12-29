@@ -26,7 +26,7 @@
         height: 20px;
         border: 1px solid $light;
         border-radius: 50%;
-        background-color: $navy-dark;
+        background-color: $primary;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,12 +54,6 @@
       }
   }
 
-  @media (min-width: 992px){
-    .timeline-bg{
-      background-color: $navy-dark;
-    }
-  }
-
 .overlapCard{
   @media (min-width: 992px){
     display: flex;
@@ -79,11 +73,11 @@
     margin-bottom: 32px;
     border-style: solid;
     border-width: 12px 12px 0 12px;
-    border-color: $navy-dark transparent transparent transparent;
+    border-color: $primary-light transparent transparent transparent;
 
     @media (min-width: 992px){
       border-width: 12px 0px 12px 12px;
-      border-color: transparent transparent transparent $navy-dark;
+      border-color: transparent transparent transparent $primary-light;
       margin: 0;
       z-index: 1;
     }
@@ -100,9 +94,19 @@
   }
 }
 .apply-payment-item{
-
   width: calc(50% - 8px);
 
+  label{
+    border: 1px solid $light;
+    color: $light;
+
+     &:hover{
+      background-color: $secondary;
+      border: 1px solid $secondary !important;
+      color: $light !important;
+
+     }
+  }
   @media (min-width: 992px){
 
     width: auto;
@@ -111,11 +115,6 @@
 
 .apply-form{
 
-  &-btn{
-    a{
-      width: 100%;
-    }
-  }
   @media (min-width: 992px){
 
     display: flex;
@@ -127,15 +126,22 @@
     &-item-100{
       width: 100%;
     }
+  }
 
-    &-btn{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  &-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    border: 1px solid $secondary; 
+    border-radius: 8px;
+    &:hover{
+      background-color: $light !important;
+      border: 1px solid $light !important;
 
-      a{
-        width: 23.7%;
+      a, span{
+        color: $secondary !important;
       }
     }
   }

@@ -1,12 +1,12 @@
 ---
-title: Boostrap Index
+title: Hacademy
 layout: ./app/layout.ejs
 engine: ejs
 current: class
 ---
-<div class="bg-black">
+<div class="bg-primary">
     
-<div class="py-7 pt-lg-7 pb-lg-4 timeline-bg mb-12">
+<div class="py-7 pt-lg-7 pb-lg-4 bg-primary mb-12">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-9 col-md-7 timeline">
@@ -36,7 +36,7 @@ current: class
     <div class="row justify-content-center">
       <div class="col-lg-4 justify-content-center">
 
-        <div class="p-7 px-lg-9 py-lg-12 bg-primary mb-11">
+        <div class="p-7 px-lg-9 py-lg-12 bg-primary-light mb-11">
           <h2 class="fs-4 text-center text-light mb-7 mb-lg-12">信用卡付款</h2>
           <h3 class="fs-7 text-center text-light mb-4 mb-lg-7">請輸入信用卡資訊進行付款</h3>
           <form>
@@ -58,7 +58,10 @@ current: class
     
   
             <h4 class="fs-7 text-light mb-4">NT$16,000</h4>
-            <a class="btn btn-primary d-block bg-navy-light border fs-7 px-3 py-3 rounded-8 align-middle" href="./checkout-thankPage.html">確認結帳</a>
+            <div class="apply-form-btn px-8 px-md-16 py-2">
+              <a class="btn fs-7 d-block text-light stretched-link" href="./checkout-thankPage.html">確認付款</a>
+              <span class="material-icons text-light">arrow_right_alt</span>
+            </div>
 
           </form>
 

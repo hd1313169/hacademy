@@ -1,12 +1,12 @@
 
 // 商標
 h1{
-    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo2.svg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/hacademy_logo_dark.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 24px;
-    height: 24px;
+    width: 180px;
+    height: 128px;
     text-indent: 101%;
       white-space: nowrap;
       overflow: hidden;
@@ -14,9 +14,9 @@ h1{
   
   @media (min-width: 768px){
     h1{
-      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg);
+      background-image: url(https://raw.githubusercontent.com/hd1313169/hacademy/main/app/assets/images/hacademy_logo_dark.png);
       width: 180px;
-      height: 42px;
+      height: 128px;
     }
   }
   // 商標END
