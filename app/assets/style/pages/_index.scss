@@ -1,7 +1,7 @@
 // 橫幅廣告
 // 背景圖片
 .banner-bg {
-  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home_mobile.jpg?raw=true);
+  background-image: url(../../images/bg_home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -43,7 +43,7 @@
 
 @media (min-width: 768px) {
   .banner-bg {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home.jpg?raw=true);
+    background-image: url(../../images/bg_home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -260,7 +260,7 @@
     padding: 216px 48px;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.5);
 
       span {
         color: $secondary;
