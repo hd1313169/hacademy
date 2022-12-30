@@ -19646,7 +19646,7 @@ h1, .h1 {
 }
 
 .hotLesson .card:hover {
-  border: 2px solid #6257F6;
+  border: 2px solid #6257F6 !important;
   background-color: #6257F6 !important;
   -webkit-transform: translateY(-20px);
       -ms-transform: translateY(-20px);
